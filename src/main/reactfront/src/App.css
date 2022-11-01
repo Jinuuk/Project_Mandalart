@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+* {
+  outline : 1px solid green;
+}
+
+.menuBar {
+  height: 50px;
+  background-color: grey;
+  display : flex;
+  justify-content: space-between;
+}
+
+.menuBar .siteName {
+  margin-left : 75px;
+  line-height: 50px;
+}
+
+.menuBar .visitorMenu {
+  margin-right:75px;
+  line-height: 50px;
+}
+
+.menuBar .visitorMenu span {
+  margin-left : 15px;
+}
+
