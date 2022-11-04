@@ -1,19 +1,19 @@
 function Login(){
   return (
-    <form action="">
+    <form className = "loginForm" action="">
     <h2>로그인</h2>
     <div>
-      <label htmlFor="">아이디</label><input type="text" />
+      <input placeholder="이메일 주소"  type="text" />
     </div>
     <div>
-      <label htmlFor="">비밀번호</label><input type="password" />
+      <input placeholder="비밀번호" type="password" />
     </div>
     <div>
       <button>로그인</button>
     </div>
-    <div>
-      <a href="">비밀번호 찾기</a>
-      <a href="">회원가입</a>
+    <div className="otherLink">
+      <span>비밀번호 찾기</span>
+      <span>회원가입</span>
     </div>
   </form>
   )

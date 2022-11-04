@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .App {
   text-align: center;
 }
@@ -37,28 +44,119 @@
   }
 }
 
-* {
+/* 전체 */
+
+/* * {
   outline : 1px solid green;
+} */
+
+* {
+   font-family: 'GmarketSansMedium';
+   padding:0px;
+   margin:0px;
+   list-style: none;
 }
 
+/* 메뉴 */
+
 .menuBar {
-  height: 50px;
-  background-color: grey;
+  height: 75px;
+  background-color: white;
+  box-shadow: 5px 0px 20px gainsboro;
   display : flex;
   justify-content: space-between;
 }
 
 .menuBar .siteName {
   margin-left : 75px;
-  line-height: 50px;
+  line-height: 75px;
+}
+
+.menuBar .siteName:hover {
+  cursor:pointer;
 }
 
 .menuBar .visitorMenu {
   margin-right:75px;
-  line-height: 50px;
+  line-height: 75px;
+}
+
+.menuBar .visitorMenu span:hover{
+  cursor: pointer;
+  color : blue;
 }
 
 .menuBar .visitorMenu span {
   margin-left : 15px;
 }
 
+/* 로그인 */
+.loginForm {
+  margin-top : 150px;
+  width: 400px;
+  /* height: 400px;
+  border: 1px solid black; */
+}
+
+.loginForm h2 {
+  margin-bottom: 25px;
+}
+
+.loginForm input {
+  height: 40px;
+  width: 400px;
+  border : none;
+  border-bottom : 1px solid grey;
+  font-size: 16px;
+}
+
+.loginForm input:focus {
+  outline: none;
+  border-bottom : 1px solid black;
+}
+
+.loginForm button {
+  width: 400px;
+  height: 40px;
+  margin : 20px 0;
+  color:white;
+  background-color: black;
+  border:none;
+  font-size : 16px;
+}
+
+.loginForm button:hover{
+  cursor: pointer;
+  background-color: grey;
+  transition: all 0.3s;
+}
+
+.otherLink {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.otherLink span {
+  font-size: 14px;
+  height: 20px;
+  line-height: 20px;
+  margin-left : 10px;
+}
+
+.otherLink span:hover{
+  cursor: pointer;
+  color:grey;
+  transition: all 0.3s;
+}
+
+/* 메인 */
+main {
+  height: 900px;
+  display : flex;
+  justify-content: center;
+}
+
+/* 푸터 */
+footer {
+  height: 100px;
+}
