@@ -7,10 +7,12 @@ import Menu from './component/Menu.js'
 import Login from './component/Login.js'
 import Join from './component/Join.js'
 import Intro from './component/Intro.js'
+import FindPw from './component/FindPw.js'
+import MyPage from './component/MyPage.js'
 
 function App() {
   let [message, setMessage] = useState('');
-  let [loginState,setLoginState] = useState(false);
+  let [loginState,setLoginState] = useState(true);
 
   useEffect(()=>{
     axios.get('/hello')
@@ -32,7 +34,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Intro/>}/>
           <Route path="/login" element={<Login/>} />
-          <Route path="/Join" element={<Join/>} />
+          <Route path="/join" element={<Join/>} />
+          <Route path="/findPw" element={<FindPw/>} />
+          <Route path="/myPage" element={<MyPage/>} />
         </Routes>
       </main>
       <footer>푸터</footer>

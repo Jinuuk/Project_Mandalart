@@ -46,9 +46,9 @@
 
 /* 전체 */
 
-/* * {
+* {
   outline : 1px solid green;
-} */
+}
 
 * {
    font-family: 'GmarketSansMedium';
@@ -90,19 +90,33 @@
   margin-left : 15px;
 }
 
-/* 로그인 */
-.loginForm {
+.submenuBox {
+  background-color: yellow;
+  width: 150px;
+  position:absolute;
+
+}
+
+/* 메인 */
+main {
+  height: 900px;
+  display : flex;
+  justify-content: center;
+}
+
+/* inputForm */
+.inputForm {
   margin-top : 150px;
   width: 400px;
   /* height: 400px;
   border: 1px solid black; */
 }
 
-.loginForm h2 {
+.inputForm h2 {
   margin-bottom: 25px;
 }
 
-.loginForm input {
+.inputForm input {
   height: 40px;
   width: 400px;
   border : none;
@@ -110,12 +124,12 @@
   font-size: 16px;
 }
 
-.loginForm input:focus {
+.inputForm input:focus {
   outline: none;
   border-bottom : 1px solid black;
 }
 
-.loginForm button {
+.inputForm button {
   width: 400px;
   height: 40px;
   margin : 20px 0;
@@ -125,7 +139,7 @@
   font-size : 16px;
 }
 
-.loginForm button:hover{
+.inputForm button:hover{
   cursor: pointer;
   background-color: grey;
   transition: all 0.3s;
@@ -149,12 +163,52 @@
   transition: all 0.3s;
 }
 
-/* 메인 */
-main {
-  height: 900px;
-  display : flex;
-  justify-content: center;
+
+/* 회원가입 */
+.joinForm {
+  margin-top : 150px;
+  display:flex;
+  flex-direction: column;
+  align-items:flex-start;
 }
+
+.joinForm h2 {
+  margin-bottom: 25px;
+  align-self: center;
+}
+
+.joinForm input {
+  height: 40px;
+  width: 400px;
+  border : none;
+  border-bottom : 1px solid grey;
+  font-size: 16px;
+  margin-bottom : 20px;
+}
+
+.joinForm input:focus {
+  outline: none;
+  border-bottom : 1px solid black;
+}
+
+.joinForm button {
+  width: 400px;
+  height: 40px;
+  /* margin : 20px 0; */
+  color:white;
+  background-color: black;
+  border:none;
+  font-size : 16px;
+}
+
+.joinForm button:hover{
+  cursor: pointer;
+  background-color: grey;
+  transition: all 0.3s;
+}
+
+
+
 
 /* 푸터 */
 footer {
