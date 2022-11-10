@@ -16,15 +16,22 @@ function Menu(props){
         </div>
         :
         <div className="visitorMenu">
-          {/* <span onClick={()=>{navigate('/myPage')}}>누구누구님</span> */}
           <span onClick={()=>{setSubmenu(!submenu)}}>누구누구님</span>
           {
             submenu == true ?
-            <div className='submenuBox'>
-              <div>나의 만다라트</div>
-              <div>회원정보 수정</div>
-              <div>로그아웃</div>
-            </div>
+            <ul className='submenuBox'>
+              <li onClick={()=>{
+                navigate('/myMandalart');
+                setSubmenu(!submenu);
+              }}>나의 만다라트</li>
+              <li onClick={()=>{
+                navigate('/myPage');
+                setSubmenu(!submenu);
+                }}>회원정보 수정</li>
+              <li onClick={()=>{
+                setSubmenu(!submenu)
+              }}>로그아웃</li>
+            </ul>
             :
             null
           }

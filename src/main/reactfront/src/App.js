@@ -9,6 +9,7 @@ import Join from './component/Join.js'
 import Intro from './component/Intro.js'
 import FindPw from './component/FindPw.js'
 import MyPage from './component/MyPage.js'
+import MyMandalart from './component/MyMandalart'
 
 function App() {
   let [message, setMessage] = useState('');
@@ -37,9 +38,10 @@ function App() {
           <Route path="/join" element={<Join/>} />
           <Route path="/findPw" element={<FindPw/>} />
           <Route path="/myPage" element={<MyPage/>} />
+          <Route path="/myMandalart" element={<MyMandalart/>} />
         </Routes>
       </main>
-      <footer>푸터</footer>
+      {/* <footer>푸터</footer> */}
     </div>
   );
 }
