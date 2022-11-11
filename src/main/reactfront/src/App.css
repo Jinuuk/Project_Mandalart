@@ -46,9 +46,9 @@
 
 /* 전체 */
 
-* {
+/* * {
   outline : 1px solid green;
-}
+} */
 
 * {
    font-family: 'GmarketSansMedium';
@@ -229,6 +229,40 @@ main {
   cursor: pointer;
   background-color: grey;
   transition: all 0.3s;
+}
+
+/* 만다라트 */
+.mandalart-table {
+  width: 720px;
+  height: 720px;
+  display : grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-left : auto;
+  margin-right: auto;
+}
+
+.mandalart-table .main-item {
+  display : grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.detail-item {
+  border : 1px solid black;
+  resize: none;
+}
+
+.m5 .detail-item {
+  background-color: #eee;
+}
+
+.main-item .d5 {
+  background-color: black;
+}
+
+.m5 .d5 {
+  background-color: yellow;
 }
 
 /* 푸터 */
