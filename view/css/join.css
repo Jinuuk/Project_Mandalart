@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+.joinForm {
+  margin-top : 150px;
+  display:flex;
+  font-size: 13px;
+}
+
+.joinForm ul {
+  margin-left : auto;
+  margin-right: auto;
+}
+
+.joinForm ul li:nth-child(1) {
+  text-align: center;
+}
+
+.joinForm ul li {
+  text-align : start;
+}
+
+.joinForm ul .joinForm__title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+
+.joinForm input {
+  height: 40px;
+  width: 400px;
+  border : none;
+  border-bottom : 2px solid black;
+  margin-bottom : 20px;
+  transition: all 0.3s;
+}
+
+.joinForm input:focus {
+  outline: none;
+  border-bottom : 2px solid #eee;
+}
+
+.joinForm button {
+  width: 400px;
+  height: 40px;
+  color:white;
+  background-color: black;
+  border:none;
+  font-size : 13px;
+  font-weight: bold;
+}
+
+.joinForm button:hover{
+  cursor: pointer;
+  background-color: grey;
+  transition: all 0.3s;
+}

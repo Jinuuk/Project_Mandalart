@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mandalart : Main</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="https://kit.fontawesome.com/038578f405.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <nav class="menu">
+        <div class="menu__logo"><a href="/main.html"><i class="fa-solid fa-globe" style="margin-right : 5px;"></i>Mandalart</a></div>
+        <div style="flex-grow : 1;"></div>
+        <!-- 로그인 전 -->
+        <!-- <div class="menu__login menu__item"><a href="/login.html">로그인</a></div>
+        <div class="menu__join menu__item"><a href="/join.html">회원가입</a></div> -->
+
+        <!-- 로그인 후 -->
+        <div class="menu__member" id="menu__member">
+          <span class="menu__nickname">닉네임</span>
+          <span class="menu__arrow"><i class="fa-solid fa-caret-down" style="margin-left : 5px;"></i></span>
+          <div class="menu__member-box" id="menu__member-box">
+            <div>나의 만다라트</div>
+            <div>회원정보 수정</div>
+            <div>로그아웃</div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <footer>
+      <div class="footer__box">
+        <span>Made by Jinuuk</span>
+        <span><a href="https://github.com/jinuuk" target="_blank"><i class="fa-brands fa-github" style="color :white; font-size : 15px;"></i></a></span>
+      </div>
+    </footer>
+  </div>
+</body>
+
+<script>
+  const $menu__member = document.getElementById('menu__member');
+  $menu__member.addEventListener('click',()=>{
+    console.log('click!')
+    document.getElementById('menu__member-box').classList.add('visible');
+  })
+</script>
+</html>
